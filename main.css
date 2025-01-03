@@ -1,0 +1,152 @@
+/* top 위치 및 아이콘, 글자 크기 조정 */
+.top{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.etc{
+  display: flex;
+  align-items: center;
+}
+
+.etc p{
+  margin-top: 0;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.top-icon{
+  margin-top: -8px;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.top-viewIcon{
+  margin-top: -5px;
+  width: 17px;
+  height: 17px;
+}
+
+/* 메인 */
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* header 위치 및 아이콘, 글자 크기 지정 */
+.header{
+  display: flex;
+  float: right;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.header p, .icon{
+  margin-right: 30px;
+  font-weight: 100;
+  font-size: 13px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.header p:hover{
+  text-decoration: underline;
+}
+
+.icon, .appicon{
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+/* mainScreen 로고 중앙 배치 */
+
+.mainScreen{
+  width: 100%;
+}
+
+.googleLog{
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+}
+
+/* input 크기 조정 */
+.search{
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.search input{
+  width: 800px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 150px;
+  padding-left: 50px;
+  margin : 50px auto;
+}
+
+input.hover{
+  border: 1px solid gray;
+}
+
+.search img{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.searchIcon{
+  left: 350px;
+  top: 67px;
+  cursor: pointer;
+}
+
+.right{
+  position: absolute;
+  top: 65px;
+  right: 400px;
+}
+
+.mic{
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+.camera{
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+/* apps 사용 */
+.apps{
+  display: flex;
+  justify-content: space-around;
+}
+
+.apps img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #F2F3F4;
+}
+
+.apps p{
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.app{
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  
+}
+
+.app:hover{
+  cursor: pointer;
+  background-color: rgb(200, 200, 200);
+}

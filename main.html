@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./main.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+  </head>
+  <body>
+
+    <div class="top">
+      <div class="view">
+        <img class="top-viewIcon" src="./images/view.png"/>
+      </div>
+      <div class="etc">
+        <img class="top-icon" src="./images/line.png"/>
+        <img class="top-icon" src="./images/folder.png"/>
+        <p> 모든 북마크 </p>
+      </div>
+    </div>
+
+    <div class="header">
+      <p onclick="moving(gmail)"> Gmail </p>
+      <p onclick="moving(images)"> 이미지 </p>
+      <img class="icon" src="./images/labs.png" onclick="moving(labs)"/>
+      <img class="appicon" src="./images/app.png"/>
+    </div>
+
+    <div class="container">
+
+      <div class="mainScreen">
+
+        <div class="googleLog">
+          <img src="./images/google_logo.svg"/>
+        </div>
+
+        <div class="search">
+          <input type="text" placeholder="Google 검색 또는 URL 입력"/>
+          <img  class="searchIcon" src="./images/search_cr23.svg"/>
+
+          <div class="right">
+            <img class="mic" src="./images/mic.svg" onclick="moving(prepare)"/>
+            <img class="camera" src="./images/camera.svg" onclick="moving(prepare)"/>
+          </div>
+        </div>
+
+        <div class="apps">
+          <div class="app">
+            <img src="./images/appstore.png"/>
+            <p> 앱 스토어 </p>
+          </div>
+          <div class="app">
+            <img src="./images/youtube.jpg"/>
+            <p> 유튜브 </p>
+          </div>
+          <div class="app">
+            <img src="./images/add.svg"/>
+            <p> 바로가기 추가 </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script>
+
+    // const moving = (url) => {
+    //   if(url === "gmail"){
+    //     window.location.href("")
+    //   } else if (url === "")
+      
+    // }
+
+  </script>
+</html>
