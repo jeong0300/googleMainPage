@@ -11,7 +11,8 @@
 }
 
 .etc p{
-  margin-top: 0;
+  margin-top: 10px;
+  padding-right: 5px;
   font-weight: 100;
   font-size: 12px;
 }
@@ -25,8 +26,15 @@
 
 .top-viewIcon{
   margin-top: -5px;
+  margin-left: 10px;
   width: 17px;
   height: 17px;
+}
+
+.top-viewIcon:hover{
+  outline: 3px solid #d3d3d3;
+  border-radius: 50%;
+  background-color: #d3d3d3;
 }
 
 /* 메인 */
@@ -59,6 +67,40 @@
   width: 23px;
   height: 23px;
   cursor: pointer;
+  margin-top: -15px;
+}
+
+.icon:hover{
+  outline: 5px solid #e8e8e8;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+}
+
+.appicon{
+  position: relative;
+  top: -4px;
+  right: 7px;
+}
+
+.appicon:hover{
+  outline: 5px solid #e8e8e8;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+}
+
+/* 토글 설정 */
+.dropdown .btn{
+  border: none;
+}
+
+.drop{
+  display: flex !important;
+}
+
+.dropdown-menu{
+  height: 400px;
+  overflow: auto;
+  margin-right: 10px !important;
 }
 
 /* mainScreen 로고 중앙 배치 */
@@ -81,17 +123,20 @@
 }
 
 .search input{
-  width: 800px;
+  width: 700px;
   height: 50px;
-  border: 1px solid gray;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0px 0px 8px #d3d3d3;
   border-radius: 150px;
   padding-left: 50px;
-  margin : 50px auto;
+  margin : 40px auto;
 }
 
-input.hover{
-  border: 1px solid gray;
+input:focus{
+  outline: none;
 }
+
+/* input 위 아이콘 위치 */
 
 .search img{
   position: absolute;
@@ -100,53 +145,108 @@ input.hover{
 }
 
 .searchIcon{
-  left: 350px;
-  top: 67px;
+  left: 320px;
+  top: 57px;
   cursor: pointer;
+}
+
+input::placeholder{
+  font-weight: 300;
+  font-size: 15px;
 }
 
 .right{
   position: absolute;
-  top: 65px;
-  right: 400px;
+  top: 57px;
+  right: 460px;
 }
 
 .mic{
+  margin-left: 85px;
   margin-top: 1px;
   cursor: pointer;
 }
 
 .camera{
-  margin-left: 30px;
+  margin-left: 120px;
   cursor: pointer;
 }
 
-/* apps 사용 */
+/* apps 크기 및 위치 */
 .apps{
+  width: 400px;
   display: flex;
+  margin: 0 auto;
   justify-content: space-around;
 }
 
-.apps img{
+.apps .img{
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #F2F3F4;
 }
 
-.apps p{
+.app p{
+  text-align: center;
   font-weight: 100;
   font-size: 12px;
+  margin-top: 15px;
 }
 
 .app{
-  width: 80px;
-  height: 80px;
-  border-radius: 10px;
-  
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  padding-top: 20px;
+  text-align: center;
 }
 
 .app:hover{
   cursor: pointer;
-  background-color: rgb(200, 200, 200);
+  background-color: rgb(229, 228, 228);
+}
+
+/* 이미지에 마우스 올리면 more 보이게 함 */
+
+.imgs{
+  position: relative;
+}
+
+.none1{
+  display: none;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 35px;
+  left: 95px;
+}
+
+.none2{
+  display: none;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 35px;
+  left: 95px;
+}
+
+.imgs:hover .none1{
+  display: block;
+}
+
+.imgs:hover .none2{
+  display: block;
+}
+
+.none1:hover{
+  border-radius: 50%;
+  background-color: rgb(209, 209, 209);
+  cursor: pointer;
+}
+
+.none2:hover{
+  border-radius: 50%;
+  background-color: rgb(209, 209, 209);
+  cursor: pointer;
 }
