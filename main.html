@@ -133,7 +133,7 @@
                 <li class="dropdown-item">
                   <div class="items" onclick="moving(`https://www.google.com/retail/`)">
                     <img src="./images/menu23.png"/>
-                    <p>Merchant <br/> Center</p>
+                    <p>Merchant</p><p>Center</p>
                   </div>
                 </li>
                 <li class="dropdown-item">
@@ -190,7 +190,7 @@
                 <li class="dropdown-item">
                   <div class="items" onclick="moving(`https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fanalytics.google.com%2Fanalytics%2Fweb%2F%3Futm_source%3DOGB%26utm_medium%3Dapp%23&followup=https%3A%2F%2Fanalytics.google.com%2Fanalytics%2Fweb%2F%3Futm_source%3DOGB%26utm_medium%3Dapp&ifkv=AeZLP98p5mtkZTSPYXV5K9_pLaPYP7onDBT8mBxDSFvLpLNaJZtTT8WY98VhpJa8Ks1ncTdzfs20&passive=1209600&service=analytics&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1824709366%3A1736062063059208&ddm=1`)">
                     <img src="./images/menu36.png"/>
-                    <p>Google<br/>애널리틱스</p>
+                    <p>Google</p><p>애널리틱스</p>
                   </div>
                 </li>
                 <li class="dropdown-item">
@@ -287,11 +287,11 @@
 
           <div class="right">
             <div class="mesege-mic">
-              <img class="mic" src="./images/mic.svg" onclick="moving(prepare)"/>
+              <img class="mic" src="./images/mic.svg" onclick="moving('prepare.html')"/>
               <div class="behinde-mic">음성검색</div>
             </div>
             <div class="mesege-cam">
-              <img class="camera" src="./images/camera.svg" onclick="moving(prepare)"/>
+              <img class="camera" src="./images/camera.svg" onclick="moving('prepare.html')"/>
               <div class="behinde-cam">이미지로 검색</div>
             </div>
           </div>
@@ -328,7 +328,9 @@
   <script>
 
     const moving = (url) => {
+      
       window.location.href = url;
+      
     };
 
   </script>
