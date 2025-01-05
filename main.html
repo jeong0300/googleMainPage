@@ -10,6 +10,7 @@
   </head>
   <body>
 
+    <!-- 맨 위 -->
     <div class="top">
       <div class="view">
         <img class="top-viewIcon" src="./images/view.png"/>
@@ -21,47 +22,256 @@
       </div>
     </div>
 
+    <!-- gmail, 이미지, labs, apps -->
     <div class="header">
-      <p onclick="moving(gmail)"> Gmail </p>
-      <p onclick="moving(images)"> 이미지 </p>
-      <img class="icon" src="./images/labs.png" onclick="moving(labs)"/>
+      <p class="underline" onclick="moving('https://workspace.google.com/intl/ko/gmail/')"> Gmail </p>
+      <p class="underline" onclick="moving(`https://www.google.com/imghp?hl=ko&tab=ri&ogbl`)"> 이미지 </p>
+      <div class="mesege">
+        <img class="icon" src="./images/labs.png" onclick="moving(`https://labs.google.com/search?source=ntp`)"/>
+        <div class="behinde">Search Labs</div>
+      </div>
       
       <div class="dropdown">
         <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <img class="appicon" src="./images/app.png"/>
+          <div class="mesege-app">
+            <img class="appicon" src="./images/app.png"/>
+            <div class="behinde-app">Google 앱</div>
+          </div>
         </button>
 
-        <ul class="dropdown-menu">
-          <div class="drop">
-            <li class="dropdown-item"><img src="./images/menu1.png"/><p>주소록</p></li>
-            <li class="dropdown-item"><img src="./images/menu2.png"/><p>계정</p></li>
-            <li class="dropdown-item"><img src="./images/menu4.png"/><p>유튜브</p></li>
-          </div>
-          <div class="drop">
-            <li class="dropdown-item"><img src="./images/menu5.png"/><p>도서</p></li>
-            <li class="dropdown-item"><img src="./images/menu6.png"/><p>주소록</p></li>
-            <li class="dropdown-item"><img src="./images/menu9.png"/><p>채팅</p></li>
-          </div>
-          <div class="drop">
-            <li class="dropdown-item"><img src="./images/menu10.png"/><p>Blogger</p></li>
-            <li class="dropdown-item"><img src="./images/menu15.png"/><p>뉴스</p></li>
-            <li class="dropdown-item"><img src="./images/menu14.png"/><p>저장됨</p></li>
-          </div>
-          <div class="drop">
-            <li class="dropdown-item"><img src="./images/menu16.png"/><p>Sheets</p></li>
-            <li class="dropdown-item"><img src="./images/menu19.png"/><p>어스</p></li>
-            <li class="dropdown-item"><img src="./images/menu20.png"/><p>Google Ads</p></li>
-          </div>
-          <div class="drop">
-            <li class="dropdown-item"><img src="./images/menu22.png"/><p>Keep</p></li>
-            <li class="dropdown-item"><img src="./images/menu19.png"/><p>어스</p></li>
-            <li class="dropdown-item"><img src="./images/menu20.png"/><p>Google Ads</p></li>
-          </div>
-        </ul>
+        <!-- dropDown Menu -->
+          <ul class="dropdown-menu">
+
+            <div class="back-top">
+              <div class="drop">
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fcontacts.google.com%2F&followup=https%3A%2F%2Fcontacts.google.com%2F&ifkv=AeZLP9_MW2AXgaYBRu8Csd3Hph1MzbIdIHsHb2jIMr0RbWt4IgxPlCKFJy_kvg4NsNBv-HjK9mZSZg&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-2063392457%3A1736061346324138&ddm=1`)">
+                    <img src="./images/menu1.png"/>
+                    <p>주소록</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://www.google.com/account/about/?hl=ko`)">
+                    <img src="./images/menu2.png"/>
+                    <p>계정</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://www.youtube.com/`)">
+                  <img src="./images/menu4.png"/>
+                  <p>유튜브</p>
+                </div>
+                </li>
+              </div>
+              <div class="drop">
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://books.google.com/`)">
+                  <img src="./images/menu5.png"/>
+                  <p>도서</p>
+                </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://www.google.com/?hl=ko`)">
+                  <img src="./images/menu6.png"/>
+                  <p>google</p>
+                </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://workspace.google.com/products/chat/`)">
+                  <img src="./images/menu9.png"/>
+                  <p>채팅</p>
+                </div>
+                </li>
+              </div>
+              <div class="drop">
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://www.blogger.com/about/?bpli=1`)">
+                    <img src="./images/menu10.png"/>
+                    <p>Blogger</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://news.google.com/home?hl=ko&gl=KR&ceid=KR:ko`)">
+                    <img src="./images/menu15.png"/>
+                    <p>뉴스</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://www.google.com/interests/saved`)">
+                    <img src="./images/menu14.png"/>
+                    <p>저장됨</p>
+                  </div>
+                </li>
+              </div>
+              <div class="drop">
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2F%3Fusp%3Dsheets_alc&followup=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2F%3Fusp%3Dsheets_alc&ifkv=AeZLP987Du0bfXKevWNHlkSztea9DLnt2rUtXQw_lVi4gr8pIH_gr069qt_0DCJVJfxcmz9pIVDung&ltmpl=sheets&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1293893736%3A1736061653478915&ddm=1`)">
+                    <img src="./images/menu16.png"/>
+                    <p>Sheets</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://earth.google.com/web/@0,0,0a,22251752.77375655d,35y,0h,0t,0r/data=CgRCAggBQgIIAEoNCP___________wEQAA`)">
+                    <img src="./images/menu19.png"/>
+                    <p>어스</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://ads.google.com/home/?subid=ww-ww-xs-ip-awhc-a-ogb_cons!o2`)">
+                    <img src="./images/menu20.png"/>
+                    <p>Google Ads</p>
+                  </div>
+                </li>
+              </div>
+              <div class="drop">
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fkeep.google.com%2F&followup=https%3A%2F%2Fkeep.google.com%2F&ifkv=AeZLP986hmVCn0_pxMWp3PUjDAfIqjUsC0Lm40xn4jI_bZKbc1O7p4WjkDTmhH1eR4W6YVM7vr_muQ&ltmpl=keep&passive=1209600&service=memento&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-2113906204%3A1736061733360946&ddm=1`)">
+                    <img src="./images/menu22.png"/>
+                    <p>Keep</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://www.google.com/retail/`)">
+                    <img src="./images/menu23.png"/>
+                    <p>Merchant <br/> Center</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://www.google.com/maps`)">
+                    <img src="./images/menu24.png"/>
+                    <p>지도</p>
+                  </div>
+                </li>
+              </div>
+            </div>
+
+            <div class="back-bottom">
+              <div class="drop">
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://shopping.google.com/?nord=1`)">
+                    <img src="./images/menu28.png"/>
+                    <p>쇼핑</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://workspace.google.com/products/meet/`)">
+                    <img src="./images/menu29.png"/>
+                    <p>Meet</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://translate.google.com/?sl=auto&tl=ko&op=translate`)">
+                    <img src="./images/menu30.png"/>
+                    <p>번역</p>
+                  </div>
+                </li>
+              </div>
+              <div class="drop">
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://workspace.google.com/intl/ko/products/calendar/`)">
+                    <img src="./images/menu31.png"/>
+                    <p>Calender</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://www.google.com/photos/about/`)">
+                    <img src="./images/menu32.png"/>
+                    <p>사진</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fpresentation%2F%3Fusp%3Dslides_alc&followup=https%3A%2F%2Fdocs.google.com%2Fpresentation%2F%3Fusp%3Dslides_alc&ifkv=AeZLP9_aTuj9m36mtECSIweYph1Rdi8q9B5zcxsEV6UNDJLVUKvAjN7lj2WuzJBUqMlyTZNTT4IDQw&ltmpl=slides&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1374153951%3A1736062019891712&ddm=1`)">
+                    <img src="./images/menu33.png"/>
+                    <p>Slides</p>
+                  </div>
+                </li>
+              </div>
+              <div class="drop">
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fanalytics.google.com%2Fanalytics%2Fweb%2F%3Futm_source%3DOGB%26utm_medium%3Dapp%23&followup=https%3A%2F%2Fanalytics.google.com%2Fanalytics%2Fweb%2F%3Futm_source%3DOGB%26utm_medium%3Dapp&ifkv=AeZLP98p5mtkZTSPYXV5K9_pLaPYP7onDBT8mBxDSFvLpLNaJZtTT8WY98VhpJa8Ks1ncTdzfs20&passive=1209600&service=analytics&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1824709366%3A1736062063059208&ddm=1`)">
+                    <img src="./images/menu36.png"/>
+                    <p>Google<br/>애널리틱스</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://www.google.com/`)">
+                    <img src="./images/menu39.png"/>
+                    <p>검색</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://www.google.com/finance/`)">
+                    <img src="./images/menu41.png"/>
+                    <p>금융</p>
+                  </div>
+                </li>
+              </div>
+              <div class="drop">
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fforms%2F&followup=https%3A%2F%2Fdocs.google.com%2Fforms%2F&ifkv=AeZLP98ORgTH_A_sZwwnrLBaafOrKaP4RDh5rP5QbOuF-XcCraT5H-FHi_ZuQI7GJZ5fkCNJMGI1xQ&ltmpl=forms&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1797662486%3A1736062173598114&ddm=1`)">
+                    <img src="./images/menu42.png"/>
+                    <p>Forms</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://workspace.google.com/intl/ko/gmail/`)">
+                    <img src="./images/menu43.png"/>
+                    <p>Gmail</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://play.google.com/store/games?device=windows`)">
+                    <img src="./images/menu44.png"/>
+                    <p>Play</p>
+                  </div>
+                </li>
+              </div>
+              <div class="drop">
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2F%3Fusp%3Ddocs_alc&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2F%3Fusp%3Ddocs_alc&ifkv=AeZLP99g15tgCHCSugo-LWzhNR0KducKbillh8Yp40pw02Po0wEFpx95Lt3TAoLV7Fji3cV90wf67w&ltmpl=docs&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S540327088%3A1736062230622421&ddm=1`)">
+                    <img src="./images/menu47.png"/>
+                    <p>Docs</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://www.google.com/`)">
+                    <img src="./images/menu39.png"/>
+                    <p>검색</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://www.google.com/maps`)">
+                    <img src="./images/menu24.png"/>
+                    <p>지도</p>
+                  </div>
+                </li>
+              </div>
+              <div class="drop">
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://workspace.google.com/products/chat/`)">
+                    <img src="./images/menu9.png"/>
+                    <p>채팅</p>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="items" onclick="moving(`https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fkeep.google.com%2F&followup=https%3A%2F%2Fkeep.google.com%2F&ifkv=AeZLP99dyJ0EC6TA832zAm4FpnFP2cH1oXQ8glOv24Ea2sPIk5GLewCz10jJQvDHnd4oxjerWAqi&ltmpl=keep&passive=1209600&service=memento&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1690953195%3A1736062307089964&ddm=1`)">
+                    <img src="./images/menu22.png"/>
+                    <p>Keep</p>
+                  </div>
+                </li>
+                <li class="dropdown-item"></li>
+              </div>
+            </div>
+
+            <div class="drop-button">기타 Google 앱 및 제품</div>
+
+          </ul>
 
       </div>
 
     </div>
+
+    <!-- 검색창 -->
 
     <div class="container">
 
@@ -76,20 +286,28 @@
           <img  class="searchIcon" src="./images/search_cr23.svg"/>
 
           <div class="right">
-            <img class="mic" src="./images/mic.svg" onclick="moving(prepare)"/>
-            <img class="camera" src="./images/camera.svg" onclick="moving(prepare)"/>
+            <div class="mesege-mic">
+              <img class="mic" src="./images/mic.svg" onclick="moving(prepare)"/>
+              <div class="behinde-mic">음성검색</div>
+            </div>
+            <div class="mesege-cam">
+              <img class="camera" src="./images/camera.svg" onclick="moving(prepare)"/>
+              <div class="behinde-cam">이미지로 검색</div>
+            </div>
           </div>
         </div>
 
+        <!-- 저장된 앱 -->
+
         <div class="apps">
-          <div class="app">
+          <div class="app" onclick="moving(`https://chromewebstore.google.com/`)">
             <div class="imgs">
               <img class="img" src="./images/appstore.png"/>
               <img class="none1" src="./images/more.png"/>
             </div>  
             <p> 앱 스토어 </p>
           </div>
-          <div class="app">
+          <div class="app" onclick="moving(`https://www.youtube.com/?hl=ko&gl=KR&app=desktop`)">
             <div class="imgs">
               <img class="img" src="./images/youtube.jpg"/>
               <img class="none2" src="./images/more.png"/>
@@ -109,12 +327,9 @@
 
   <script>
 
-    // const moving = (url) => {
-    //   if(url === "gmail"){
-    //     window.location.href("")
-    //   } else if (url === "")
-      
-    // }
+    const moving = (url) => {
+      window.location.href = url;
+    };
 
   </script>
 </html>

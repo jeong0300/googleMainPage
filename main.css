@@ -59,7 +59,7 @@
   cursor: pointer;
 }
 
-.header p:hover{
+.underline:hover{
   text-decoration: underline;
 }
 
@@ -67,7 +67,7 @@
   width: 23px;
   height: 23px;
   cursor: pointer;
-  margin-top: -15px;
+  margin-top: -17px;
 }
 
 .icon:hover{
@@ -88,9 +88,80 @@
   background-color: #e8e8e8;
 }
 
-/* 토글 설정 */
+/* 메시지 위치 조정 */
+.mesege{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.behinde{
+  opacity: 0;
+  visibility: hidden;
+  width: 85px;
+  position: absolute;
+  top: 20px;
+  left: -30px;
+  text-align: center;
+  font-size: 13px;
+  background-color: rgb(94, 94, 94);
+  color: white;
+  border-radius: 5px;
+  transition: opacity 0.5s ease, visibility 0.1s ease;
+}
+
+.mesege:hover .behinde{
+  opacity: 1;
+  visibility: visible;
+}
+
+.mesege-app{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.behinde-app{
+  opacity: 0;
+  visibility: hidden;
+  width: 85px;
+  position: absolute;
+  top: 17px;
+  right: -10px;
+  text-align: center;
+  font-size: 13px;
+  background-color: rgb(94, 94, 94);
+  color: white;
+  border-radius: 5px;
+  transition: opacity 0.5s ease, visibility 0.1s ease;
+}
+
+.mesege-app:hover .behinde-app{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* dropdown 설정 */
 .dropdown .btn{
   border: none;
+}
+
+.back-top{
+  max-width: 95%;
+  border-radius: 20px;
+  margin: 0 auto 10px auto;
+  background-color: #F9FAFD;
+  padding: 35px;
+}
+
+.back-bottom{
+  max-width: 95%;
+  border-radius: 20px;
+  margin: 0 auto;
+  background-color: #F9FAFD;
+  padding: 35px;
 }
 
 .drop{
@@ -98,9 +169,64 @@
 }
 
 .dropdown-menu{
+  background-color: #EBEEF5;
+  border-radius: 20px;
   height: 400px;
   overflow: auto;
   margin-right: 10px !important;
+}
+
+/* dropdown 안 아이콘 크기 */
+.items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  border-radius: 5px;
+  width: 65px;
+  margin-bottom: 20px;
+}
+
+.items p {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.items:hover{
+  cursor: pointer;
+  outline: 5px solid #e8e8e8;
+  background-color: #e8e8e8;
+}
+
+.items:active{
+  color: black;
+}
+
+li img{
+  width: 45px;
+  height: 45px;
+  margin-bottom: 5px;
+}
+
+/* dropdown 안 버튼 */
+
+.drop-button{
+  width: 200px;
+  margin : 30px auto;
+  padding: 5px;
+  border-radius: 30px;
+  border: 1px solid rgb(75, 75, 75);
+  background-color: #d3d3d300;
+  color: blue;
+  text-align: center;
+  font-weight: 100;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.drop-button:hover{
+  border: none;
+  background-color: #F9FAFD;
 }
 
 /* mainScreen 로고 중앙 배치 */
@@ -158,7 +284,7 @@ input::placeholder{
 .right{
   position: absolute;
   top: 57px;
-  right: 460px;
+  right: 365px;
 }
 
 .mic{
@@ -170,6 +296,60 @@ input::placeholder{
 .camera{
   margin-left: 120px;
   cursor: pointer;
+}
+
+/* 메시지 크기 및 위치 */
+.mesege-mic{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.behinde-mic{
+  opacity: 0;
+  visibility: hidden;
+  width: 85px;
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  text-align: center;
+  font-size: 13px;
+  border: 1px solid rgb(94, 93, 93);
+  background-color: white;
+  transition: opacity 0.5s ease, visibility 0.1s ease;
+}
+
+.mesege-mic:hover .behinde-mic{
+  opacity: 1;
+  visibility: visible;
+}
+
+.mesege-cam{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.behinde-cam{
+  opacity: 0;
+  visibility: hidden;
+  width: 85px;
+  position: absolute;
+  top: 23px;
+  left: 90px;
+  text-align: center;
+  font-size: 13px;
+  border: 1px solid rgb(94, 93, 93);
+  background-color: white;
+  transition: opacity 0.5s ease, visibility 0.1s ease;
+}
+
+.mesege-cam:hover .behinde-cam{
+  opacity: 1;
+  visibility: visible;
 }
 
 /* apps 크기 및 위치 */
