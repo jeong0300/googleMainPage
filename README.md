@@ -31,7 +31,7 @@
 
 <br/>
 
-# 📰 페이지 구성
+# 📰 화면 구성
 
 ![Image](https://github.com/user-attachments/assets/bc3bcfb8-b5bc-4ef2-a1e2-0a54552bf2ae)
 
